@@ -506,9 +506,16 @@ def make_tasks(ctx: OrderContext):
            - 执行的回滚操作
            - 建议的人工跟进项
 
-        订单号: {ctx.order_id}
+        已知订单上下文:
+        order_id  = {ctx.order_id}
+        hold_id   = {{从库存Agent的输出中提取，格式 HOLD-XXXXXX}}
+        txn_id    = {{从支付Agent的输出中提取，格式 TXN-XXXXXXXX}}
+
+        退款调用: payment_refund(txn_id=<上面的txn_id>)
+        释放库存: inventory_release(hold_id=<上面的hold_id>)
         """,
         expected_output="完整的订单处理结论报告（结构化文本）",
+        context=[t_inventory, t_payment],
         agent=exception_recovery_agent,
     )
 
