@@ -1,0 +1,233 @@
+backend/app/scripts/ml/base/
+# 
+.history
+.DS_Store
+__pycache__/
+.vscode
+node_modules
+
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.core
+*.orig
+*.rej
+.*.swp
+.*.swo
+*.sage.py
+.pytest_cache/
+.pyre/
+.pytype/
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage/
+*.cover
+*.log
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env.bak
+
+# 虚拟环境（常用）
+venv/
+env/
+ENV/
+.venv/
+.flaskenv
+.dockerenv
+
+# IDE / 编辑器
+# -----------------------
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+*.ipr
+*.iws
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# Emacs
+\#*
+\#*\#
+*.elc
+auto-save-list/
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+ehthumbs_vista.dll
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# -----------------------
+# Node.js / npm / Yarn / pnpm
+# -----------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+.npm
+.yarn
+
+# Build outputs
+dist/
+dist-*/
+build/
+out/
+.output/
+.next/
+.nuxt/
+.cache/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# dotenv environment variables
+.env.local
+.env.production.local
+.env.development.local
+.env.test.local
+.env*.local
+
+# -----------------------
+# Vue.js / TypeScript / Webpack / Vite
+# -----------------------
+# TypeScript
+*.tsbuildinfo
+*.js
+*.js.map
+!src/**/*.js  # 如果你有混合 ts/js 项目，可保留源码中的 js
+!public/**/*.js
+
+# Vite
+!.vite
+
+# Webpack
+.webpack/
+.webpack/webpack.config.js
+
+# Cache
+.cache/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Local Development
+.docker/
+.docker-compose.override.yml
+
+# -----------------------
+# Docker
+# -----------------------
+docker-compose.override.yml
+.dockerignore
+!docker-compose.yml
+!Dockerfile
+
+# -----------------------
+# Misc
+# -----------------------
+# Logs
+*.log
+logs/
+*.log.*
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# dotenv
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Local environment variables (sensitive)
+*.env
+!.env.example  # 保留示例文件用于提示
+
+# -----------------------
+# Build Artifacts (可选：如果你有 CI/CD)
+# -----------------------
+*.zip
+*.tar.gz
+*.tgz
+*.7z
